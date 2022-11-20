@@ -1,0 +1,82 @@
+// Copyright (c) 2022 Debashrit Parashar
+// 
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT// Copyright (c) 2022 Debashrit Parashar
+:host {
+    height: 100% !important;
+}
+
+.app-bg {
+    //background-image: linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%);
+    // background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+    background: transparent;
+}
+
+.card-bg {
+    background: transparent !important;
+    z-index: 99;
+}
+
+.card {
+    z-index: 99;
+}
+
+.card-no-border {
+    border: 0 !important;
+}
+
+.logo-font {
+    font-weight: 900 !important;
+    color: #0396FF !important;
+    opacity: 0.8;
+    font-size: 60px;
+}
+
+.btn-font {
+    font-weight: 700 !important;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px #888;
+}
+
+.btn-font:hover {
+    color: #7367F0;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 2px 2px 2px #888;
+    border: 1px #888;
+    text-shadow: 0px 0px #000;
+}
+
+.btn-font:active {
+    color: #7a6ff8;
+    background-color: #fff;
+    text-shadow: 0px 0px #000;
+}
+
+.limit {
+    height: 555px;
+    //  max-height: 500px;
+    overflow: hidden;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.btn-login {
+    background-color: #7b6ff8a2;
+}
+
+.book {
+    height: 300px !important;
+}
+
+.watermark {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    opacity: 0.2;
+    z-index: 1;
+    color: white;
+}
+
+.no-mb {
+    margin-bottom: 0 !important;
+}

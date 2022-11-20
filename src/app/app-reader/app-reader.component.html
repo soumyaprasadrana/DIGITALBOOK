@@ -1,0 +1,66 @@
+<section class="app-bg h-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card shadow" style="border-radius: 1rem;">
+                    <div class="row justify-content-center align-items-center g-0">
+                        <div class="col-sm pr-0">
+                            <div class="w-100 h-100 limit">
+                                <img class="w-100 h-100" src="assets/search.webp" atl="reading" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 pl-0 col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+                                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                                    <div class="d-flex justify-content-center align-items-center mb-3 pb-1">
+                                        <span class="h1 logo-font fw-bold  mb-0">Search Books</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <div class="form-group no-mb w-100">
+                                            <span class="fa fa-user form-control-prefix-icon text-muted" area-label="false"></span>
+                                            <input id="title" type="text" placeholder="Title" formControlName="title" class="form-control form-control-include-icon " [ngClass]="{ 'is-invalid': submitted && f.title.errors }">
+                                            <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+                                                <div *ngIf="f.title.errors.required">title is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <div class="form-group no-mb w-100">
+                                            <span class="fa fa-user form-control-prefix-icon text-muted" area-label="false"></span>
+                                            <input id="author" type="text" placeholder="Author" formControlName="author" class="form-control form-control-include-icon " [ngClass]="{ 'is-invalid': submitted && f.author.errors }">
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <div class="form-group no-mb w-100">
+                                            <span class="fa fa-user form-control-prefix-icon text-muted" area-label="false"></span>
+                                            <input id="publisher" type="text" placeholder="Publisher" formControlName="publisher" class="form-control form-control-include-icon " [ngClass]="{ 'is-invalid': submitted && f.publisher.errors }">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <div class="form-group no-mb w-100">
+                                            <span class="fa fa-user form-control-prefix-icon text-muted" area-label="false"></span>
+                                            <input id="releasedate" type="text" placeholder="Release Date" formControlName="releasedate" class="form-control form-control-include-icon " [ngClass]="{ 'is-invalid': submitted && f.releasedate.errors }">
+                                            <div *ngIf="submitted && f.releasedate.errors" class="invalid-feedback">
+                                                <div *ngIf="f.releasedate.errors.required">releasedate is required</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <button type="submit" class="btn btn-lg  btn-block btn-outline-primary">Search</button>
+                                    </div>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="watermark">
+        <img class="book" src="assets/book.svg" alt="BOOK.SVG" />
+    </div>
+</section>
